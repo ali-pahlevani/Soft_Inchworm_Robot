@@ -24,7 +24,7 @@ Training occurs over 1500 epochs, with the model processing mini-batches of 64 s
 At each epoch, the model's performance on the validation set is evaluated, and the weights are updated accordingly. To maintain stable training, gradient clipping is applied to prevent the occurrence of exploding gradients. The model with the best validation performance (i.e., the lowest validation loss) is saved for later use.
 After training, the model is evaluated on the test set using several performance metrics, such as Mean Squared Error (MSE), R² score, and others, to assess its generalization ability and predictive accuracy. **Table 1** summarizes the key evaluation metrics, including MSE, RMSE, and precision, providing a quantitative assessment of the model’s performance:
 
-<div><img src="https://github.com/user-attachments/assets/ecbff0f8-e3ca-43f2-a3e2-9447c2fceeb9" alt="Table 1" width="550" height="300"/></div>
+<div><img src="https://github.com/user-attachments/assets/ecbff0f8-e3ca-43f2-a3e2-9447c2fceeb9" alt="Table 1" width="550" height="250"/></div>
 
 To analyze the model’s prediction errors, **Fig. 2** presents a residual histogram, highlighting the distribution of residuals (differences between true and predicted values):
 
@@ -76,7 +76,7 @@ The proposed framework, comprising material estimation, velocity prediction, and
 ### Surface Material Classification Performance
 A crucial aspect of the system is its ability to accurately estimate the material type based on observed velocity. The confusion matrix in **Fig. 5** presents the classification results across different surface materials, highlighting both correctly identified cases and misclassifications:
 
-<div><img src="https://github.com/user-attachments/assets/782f3cff-25f9-4325-8dc3-29cad86e3f6d" alt="Fig. 5" width="650" height="650"/></div>
+<div><img src="https://github.com/user-attachments/assets/782f3cff-25f9-4325-8dc3-29cad86e3f6d" alt="Fig. 5" width="600" height="550"/></div>
 
 The model achieves high accuracy in most cases, demonstrating its capability to distinguish material-dependent velocity patterns.
 To provide a more detailed breakdown, **Fig. 6** illustrates the classification accuracy for each material type, showing how well the model distinguishes between different surfaces:
