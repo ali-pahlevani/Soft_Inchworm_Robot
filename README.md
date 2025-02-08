@@ -32,11 +32,9 @@ To analyze the model’s prediction errors, **Fig. 2** presents a residual histo
 
 Additionally, **Fig. 3** compares the true velocity values versus the model’s predicted values on the test set, while **Fig. 4** shows the distributions of true and predicted values, offering insight into the overall prediction behavior:
 
-<div><img src="" alt="Fig. 3" width="700" height="400"/></div>
-![Train_Result](https://github.com/user-attachments/assets/60c9118d-aea8-487c-86ea-5a25a7f9a396)
+<div><img src="https://github.com/user-attachments/assets/60c9118d-aea8-487c-86ea-5a25a7f9a396" alt="Fig. 3" width="700" height="400"/></div>
 
-<div><img src="" alt="Fig. 4" width="700" height="400"/></div>
-![True_vs_Predicted_Distribution](https://github.com/user-attachments/assets/e744fd61-006b-4461-950c-8f5ad6d1f755)
+<div><img src="https://github.com/user-attachments/assets/e744fd61-006b-4461-950c-8f5ad6d1f755" alt="Fig. 4" width="700" height="400"/></div>
 
 ---
 
