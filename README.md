@@ -40,10 +40,13 @@ To prevent excessive parameter fluctuations and maintain control stability, the 
 The system operates within an interactive loop, allowing users to input pressure and frequency values while continuously updating estimations and optimizations. The interactive nature of this process enables real-time adaptation, allowing users to adjust parameters based on live performance feedback.
 Each iteration follows a structured sequence:
 
-**1.	User Input Collection: The user is prompted to enter the current pressure and actuation frequency. The observed velocity is measured using a QRE1113 Reflectance Sensor connected to an Arduino Uno. The sensor detects black stripes on a moving surface, and velocity is calculated based on the time intervals between stripe detections. The measured velocity is then read via a serial interface and fed into the main Python code.**
-   **2.	Material Estimation: The system predicts the most likely material by comparing the measured velocity with model-predicted velocities for all known materials.**
-   **3.	Optimization Execution: The model determines the optimal pressure and frequency values that maximize the estimated velocity for the identified material.**
-   **4.	Result Storage and Display: The estimated material, optimal input conditions, and predicted maximum velocity are displayed to the user and stored in a CSV file for future analysis.**
+**1.	User Input Collection:** The user is prompted to enter the current pressure and actuation frequency. The observed velocity is measured using a QRE1113 Reflectance Sensor connected to an Arduino Uno. The sensor detects black stripes on a moving surface, and velocity is calculated based on the time intervals between stripe detections. The measured velocity is then read via a serial interface and fed into the main Python code.
+
+**2.	Material Estimation:** The system predicts the most likely material by comparing the measured velocity with model-predicted velocities for all known materials.
+
+**3.	Optimization Execution:** The model determines the optimal pressure and frequency values that maximize the estimated velocity for the identified material.
+
+**4.	Result Storage and Display:** The estimated material, optimal input conditions, and predicted maximum velocity are displayed to the user and stored in a CSV file for future analysis.
    
 The real-time nature of this system enables continuous refinement of the robot’s control parameters based on changing surface conditions, improving locomotion efficiency in diverse environments.
 
@@ -62,9 +65,12 @@ Furthermore, Fig. x shows the overall velocity prediction error distribution, pr
 
 ### Overall Framework Assessment
 Beyond individual model performance, the complete framework—including material estimation, input optimization, and real-time processing—was evaluated in a dynamic testing environment. The system successfully demonstrated:
-**•	Real-time material estimation, where the algorithm effectively identified the surface type based on velocity feedback.**
-**•	Adaptive input optimization, dynamically adjusting pressure and frequency to maximize locomotion speed.**
-**•	Stable and efficient control, ensuring that parameter adjustments led to meaningful performance improvements without excessive fluctuations.**
+
+**•	Real-time material estimation**, where the algorithm effectively identified the surface type based on velocity feedback.
+
+**•	Adaptive input optimization**, dynamically adjusting pressure and frequency to maximize locomotion speed.
+
+**•	Stable and efficient control**, ensuring that parameter adjustments led to meaningful performance improvements without excessive fluctuations.
 
 The integration of machine learning and adaptive control proved effective in enhancing the robot’s motion across different terrains.
 
