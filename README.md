@@ -76,7 +76,7 @@ The proposed framework, comprising material estimation, velocity prediction, and
 ### Surface Material Classification Performance
 A crucial aspect of the system is its ability to accurately estimate the material type based on observed velocity. The confusion matrix in **Fig. 5** presents the classification results across different surface materials, highlighting both correctly identified cases and misclassifications:
 
-<div><img src="" alt="Fig. 5" width="700" height="400"/></div>
+<div><img src="https://github.com/user-attachments/assets/782f3cff-25f9-4325-8dc3-29cad86e3f6d" alt="Fig. 5" width="700" height="400"/></div>
 
 The model achieves high accuracy in most cases, demonstrating its capability to distinguish material-dependent velocity patterns.
 To provide a more detailed breakdown, **Fig. 6** illustrates the classification accuracy for each material type, showing how well the model distinguishes between different surfaces:
