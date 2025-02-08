@@ -74,12 +74,28 @@ The real-time nature of this system enables continuous refinement of the robot�
 The proposed framework, comprising material estimation, velocity prediction, and input optimization, was tested on a variety of surfaces to assess its accuracy and effectiveness. The evaluation focuses on three key aspects: material classification performance, velocity prediction accuracy, and the overall system’s adaptability to different surface conditions.
 
 ### Surface Material Classification Performance
-A crucial aspect of the system is its ability to accurately estimate the material type based on observed velocity. The confusion matrix in **Fig. 5** presents the classification results across different surface materials, highlighting both correctly identified cases and misclassifications. The model achieves high accuracy in most cases, demonstrating its capability to distinguish material-dependent velocity patterns.
-To provide a more detailed breakdown, **Fig. 6** illustrates the classification accuracy for each material type, showing how well the model distinguishes between different surfaces. The results indicate that while classification performance remains high, some materials exhibit slightly lower accuracy due to overlapping velocity distributions.
+A crucial aspect of the system is its ability to accurately estimate the material type based on observed velocity. The confusion matrix in **Fig. 5** presents the classification results across different surface materials, highlighting both correctly identified cases and misclassifications:
+
+<div><img src="" alt="Fig. 5" width="700" height="400"/></div>
+
+The model achieves high accuracy in most cases, demonstrating its capability to distinguish material-dependent velocity patterns.
+To provide a more detailed breakdown, **Fig. 6** illustrates the classification accuracy for each material type, showing how well the model distinguishes between different surfaces:
+
+<div><img src="" alt="Fig. 6" width="700" height="400"/></div>
+
+The results indicate that while classification performance remains high, some materials exhibit slightly lower accuracy due to overlapping velocity distributions.
 
 ### Velocity Prediction Accuracy
-In addition to material classification, the framework’s ability to predict the robot’s velocity under different conditions was analyzed. **Fig. 7** presents a residual velocity analysis, displaying the distribution of prediction errors across various surface materials. The results indicate that while the model maintains a low error margin for most surfaces, certain materials introduce larger variations, suggesting the potential influence of unmodeled factors.
-Furthermore, **Fig. 8** shows the overall velocity prediction error distribution, providing insight into the deviations between true and predicted velocities. The error remains minimal for most test cases, reinforcing the model’s reliability. However, minor discrepancies highlight areas where further refinements—such as integrating additional environmental features—could enhance performance.
+In addition to material classification, the framework’s ability to predict the robot’s velocity under different conditions was analyzed. **Fig. 7** presents a residual velocity analysis, displaying the distribution of prediction errors across various surface materials:
+
+<div><img src="" alt="Fig. 7" width="700" height="400"/></div>
+
+The results indicate that while the model maintains a low error margin for most surfaces, certain materials introduce larger variations, suggesting the potential influence of unmodeled factors.
+Furthermore, **Fig. 8** shows the overall velocity prediction error distribution, providing insight into the deviations between true and predicted velocities:
+
+<div><img src="" alt="Fig. 8" width="700" height="400"/></div>
+
+The error remains minimal for most test cases, reinforcing the model’s reliability. However, minor discrepancies highlight areas where further refinements—such as integrating additional environmental features—could enhance performance.
 
 ### Overall Framework Assessment
 Beyond individual model performance, the complete framework—including material estimation, input optimization, and real-time processing—was evaluated in a dynamic testing environment. The system successfully demonstrated:
