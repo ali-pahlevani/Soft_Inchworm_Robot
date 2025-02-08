@@ -1,7 +1,7 @@
 # Soft_Inchworm_Robot
 
-![image](https://github.com/user-attachments/assets/01d786ea-7403-40ad-9667-27592337a50d)
 
+<div><img src="https://github.com/user-attachments/assets/01d786ea-7403-40ad-9667-27592337a50d" alt="Soft_Inchworm_Robot" width="600" height="400"/></div>
 
 ### Modeling:
 Modeling the behavior of soft inchworm robots using data-driven approaches is essential for understanding their motion dynamics and optimizing their performance. To predict the robot's velocity based on key operational parameters, a neural network model is employed, utilizing data features such as pressure, frequency, and material type. The approach incorporates several stages, including data preprocessing, neural network design, training, and evaluation, with the ultimate goal of developing a predictive model capable of estimating the velocity of the robot.
