@@ -24,11 +24,11 @@ Training occurs over 1500 epochs, with the model processing mini-batches of 64 s
 At each epoch, the model's performance on the validation set is evaluated, and the weights are updated accordingly. To maintain stable training, gradient clipping is applied to prevent the occurrence of exploding gradients. The model with the best validation performance (i.e., the lowest validation loss) is saved for later use.
 After training, the model is evaluated on the test set using several performance metrics, such as Mean Squared Error (MSE), R² score, and others, to assess its generalization ability and predictive accuracy. **Table 1** summarizes the key evaluation metrics, including MSE, RMSE, and precision, providing a quantitative assessment of the model’s performance:
 
-<div><img src="https://github.com/user-attachments/assets/5504fdfc-411f-4f8f-a8b0-21b982605aaa" alt="Table 1" width="700" height="400"/></div>
+<div><img src="https://github.com/user-attachments/assets/5504fdfc-411f-4f8f-a8b0-21b982605aaa" alt="Table 1" width="400" height="150"/></div>
 
 To analyze the model’s prediction errors, **Fig. 2** presents a residual histogram, highlighting the distribution of residuals (differences between true and predicted values):
 
-<div><img src="https://github.com/user-attachments/assets/6de45d31-ebea-43f7-be02-db031a645eda" alt="Fig. 2" width="700" height="400"/></div>
+<div><img src="https://github.com/user-attachments/assets/6de45d31-ebea-43f7-be02-db031a645eda" alt="Fig. 2" width="600" height="400"/></div>
 
 Additionally, **Fig. 3** compares the true velocity values versus the model’s predicted values on the test set, while **Fig. 4** shows the distributions of true and predicted values, offering insight into the overall prediction behavior:
 
