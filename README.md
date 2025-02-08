@@ -39,6 +39,7 @@ To prevent excessive parameter fluctuations and maintain control stability, the 
 ### Interactive User Input and Real-Time Processing
 The system operates within an interactive loop, allowing users to input pressure and frequency values while continuously updating estimations and optimizations. The interactive nature of this process enables real-time adaptation, allowing users to adjust parameters based on live performance feedback.
 Each iteration follows a structured sequence:
+
 **1.	User Input Collection: The user is prompted to enter the current pressure and actuation frequency. The observed velocity is measured using a QRE1113 Reflectance Sensor connected to an Arduino Uno. The sensor detects black stripes on a moving surface, and velocity is calculated based on the time intervals between stripe detections. The measured velocity is then read via a serial interface and fed into the main Python code.**
    **2.	Material Estimation: The system predicts the most likely material by comparing the measured velocity with model-predicted velocities for all known materials.**
    **3.	Optimization Execution: The model determines the optimal pressure and frequency values that maximize the estimated velocity for the identified material.**
