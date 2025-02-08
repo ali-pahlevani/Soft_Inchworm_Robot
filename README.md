@@ -88,12 +88,12 @@ The results indicate that while classification performance remains high, some ma
 ### Velocity Prediction Accuracy
 In addition to material classification, the framework’s ability to predict the robot’s velocity under different conditions was analyzed. **Fig. 7** presents a residual velocity analysis, displaying the distribution of prediction errors across various surface materials:
 
-<div><img src="" alt="Fig. 7" width="700" height="400"/></div>
+<div><img src="https://github.com/user-attachments/assets/cb2fd8e1-2e93-437f-b143-b505501facba" alt="Fig. 7" width="700" height="400"/></div>
 
 The results indicate that while the model maintains a low error margin for most surfaces, certain materials introduce larger variations, suggesting the potential influence of unmodeled factors.
 Furthermore, **Fig. 8** shows the overall velocity prediction error distribution, providing insight into the deviations between true and predicted velocities:
 
-<div><img src="" alt="Fig. 8" width="700" height="400"/></div>
+<div><img src="https://github.com/user-attachments/assets/68d9c5fa-a533-4471-81b2-72ea946ae3e1" alt="Fig. 8" width="700" height="400"/></div>
 
 The error remains minimal for most test cases, reinforcing the model’s reliability. However, minor discrepancies highlight areas where further refinements—such as integrating additional environmental features—could enhance performance.
 
