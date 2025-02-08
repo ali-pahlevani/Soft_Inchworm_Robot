@@ -19,7 +19,7 @@ The input to the network includes the preprocessed features, which are fed throu
 The dataset is divided into training, validation, and test sets to enable rigorous model training and evaluation. The training set is used to optimize the model’s parameters, while the validation set monitors the model's performance during training and selects the best model based on the lowest validation loss. The test set, which is kept separate from the training and validation sets, serves as the final evaluation benchmark.
 Training occurs over 1500 epochs, with the model processing mini-batches of 64 samples per epoch. **Fig. 1** illustrates the loss curve during training, showing the progression of training and validation loss over epochs:
 
-                  <div><img src="https://github.com/user-attachments/assets/ccad6cdb-fe23-4ac4-90c1-60e57a44f77d" alt="1" width="600" height="400"/></div>
+<div><img src="https://github.com/user-attachments/assets/ccad6cdb-fe23-4ac4-90c1-60e57a44f77d" alt="1" width="700" height="400"/></div>
 
 At each epoch, the model's performance on the validation set is evaluated, and the weights are updated accordingly. To maintain stable training, gradient clipping is applied to prevent the occurrence of exploding gradients. The model with the best validation performance (i.e., the lowest validation loss) is saved for later use.
 After training, the model is evaluated on the test set using several performance metrics, such as Mean Squared Error (MSE), R² score, and others, to assess its generalization ability and predictive accuracy. **Table 1** summarizes the key evaluation metrics, including MSE, RMSE, and precision, providing a quantitative assessment of the model’s performance.
