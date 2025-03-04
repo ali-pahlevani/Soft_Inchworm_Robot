@@ -5,7 +5,7 @@
 
 ### Modeling:
 Modeling the behavior of soft inchworm robots using data-driven approaches is essential for understanding their motion dynamics and optimizing their performance. To predict the robot's velocity based on key operational parameters, a neural network model is employed, utilizing data features such as pressure, frequency, and material type. The approach incorporates several stages, including data preprocessing, neural network design, training, and evaluation, with the ultimate goal of developing a predictive model capable of estimating the velocity of the robot.
-
+ 
 ### Data Preprocessing
 The raw dataset, sourced from an Excel file, undergoes extensive preprocessing to ensure it is suitable for use in the neural network model. Initially, any missing values in the dataset are handled by filling them with the mean of the respective columns. This is followed by the mapping of the categorical "Material" feature to corresponding friction coefficients, transforming it into a numerical value. This feature, labeled "Friction_Coeff," is integrated into the dataset, providing a continuous variable for the neural network to learn from.
 Data augmentation is employed to enhance the dataset when enough samples are not available. Small Gaussian noise is added to the numeric features—pressure, frequency, and velocity—thus increasing the dataset's size and variability. This augmented data is combined with the original dataset, and the resulting data is shuffled to avoid any sequence bias.
